@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router';
 import jQuery from 'jquery';
-import ProjectList from './ProjectList';
+import WhiskyList from './WhiskyList';
 
 class App extends React.Component {
   constructor(){
@@ -9,10 +10,15 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>Pick your Project</h1>
-        < ProjectList />
-      </div>
+      <div className="container">
+            <nav className="main">
+              <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/whiskies">Projects</Link></li>
+              </ul>
+            </nav>
+            {this.props.children}
+          </div>
       );
   }
 }
