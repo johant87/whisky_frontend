@@ -14,7 +14,7 @@ class App extends React.Component {
             <nav className="main">
               <ul>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/whiskies">Projects</Link></li>
+                <li><Link to="/whiskies">Whiskies</Link></li>
               </ul>
             </nav>
             {this.props.children}
