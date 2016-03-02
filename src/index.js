@@ -13,6 +13,7 @@ ReactDOM.render((
 <Router history={browserHistory}>
   <Route path="/" component={App}>
       <IndexRoute component={WhiskyList} />
+      <Route path="/whiskies" component={WhiskyList}/>
       <Route path="/whiskies/:whiskyId" component={Whisky}/>
       <Route path="*" component={PageNotFound}/>
     </Route>

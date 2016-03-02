@@ -13,7 +13,6 @@ class WhiskyList extends React.Component {
   }
 
   showWhiskies(event) {
-    let whiskyId = this.props.whiskyId;
     let component = this;
 
     jQuery.getJSON("http://vast-reaches-77135.herokuapp.com/whiskies.json", function(data) {

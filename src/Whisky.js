@@ -1,5 +1,6 @@
 import React from 'react';
 import jQuery from 'jquery';
+import WhiskyList from './WhiskyList';
 
 class Whisky extends React.Component {
  constructor() {
@@ -9,31 +10,29 @@ class Whisky extends React.Component {
    };
  }
 
-
-
+ componentDidMount() {
+   this.getWhisky();
+ }
  getWhisky(){
-   let Whiskyid = this.props.params.whiskyId;
+   let WhiskyId = this.props.params.whiskyId;
    let component = this;
 
-   jQuery.getJSON("http://vast-reaches-77135.herokuapp.com/whiskies" + Whiskyid + ".json", function(data) {
-
-     console.log("getting single whisky from server");
-
+   jQuery.getJSON("http://vast-reaches-77135.herokuapp.com/whiskies/" + WhiskyId + ".json", function(data) {
      component.setState({
        whisky: data.whisky
      });
    });
  }
 
- componentDidMount() {
-   this.getwhisky();
- }
 
  render() {
    return(
      <div>
        <ul>
        <li><strong>{this.state.whisky.name}</strong></li>
+       <li><strong>{this.state.whisky.description}</strong></li>
+       <li><strong>{this.state.whisky.origin}</strong></li>
+       <li><strong>{this.state.whisky.taste}</strong></li>
        </ul>
      </div>
    );
