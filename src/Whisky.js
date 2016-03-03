@@ -1,12 +1,13 @@
 import React from 'react';
 import jQuery from 'jquery';
-import WhiskyList from './WhiskyList';
+import ReviewList from './ReviewList';
 
 class Whisky extends React.Component {
  constructor() {
    super();
    this.state = {
-     whisky: {}
+     whisky: {},
+     reviews: []
    };
  }
 
@@ -33,7 +34,9 @@ class Whisky extends React.Component {
        <li><strong>{this.state.whisky.description}</strong></li>
        <li><strong>{this.state.whisky.origin}</strong></li>
        <li><strong>{this.state.whisky.taste}</strong></li>
+       <li><ReviewList whiskyId={this.props.params.whiskyId} /></li>
        </ul>
+
      </div>
    );
  }

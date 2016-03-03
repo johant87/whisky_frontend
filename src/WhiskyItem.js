@@ -14,10 +14,6 @@ class WhiskyItem extends React.Component {
    });
  }
 
-
-
-
-
  render() {
    return(
      <li>
