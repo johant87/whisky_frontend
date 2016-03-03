@@ -32,6 +32,7 @@ class WhiskyList extends React.Component {
   render() {
     return (
       <ul>
+      <h2>Whiskies:</h2>
      {this.state.whiskies.map(function(whisky, i) {
        return(
          <WhiskyItem key={whisky.id} id={whisky.id} name={whisky.name} />

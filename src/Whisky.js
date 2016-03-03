@@ -29,12 +29,13 @@ class Whisky extends React.Component {
  render() {
    return(
      <div>
+       <h2>Whisky:</h2>
        <ul>
-       <li><strong>{this.state.whisky.name}</strong></li>
-       <li><strong>{this.state.whisky.description}</strong></li>
-       <li><strong>{this.state.whisky.origin}</strong></li>
-       <li><strong>{this.state.whisky.taste}</strong></li>
-       <li><ReviewList whiskyId={this.props.params.whiskyId} /></li>
+         <li><strong>{this.state.whisky.name}</strong></li>
+         <li><strong>{this.state.whisky.description}</strong></li>
+         <li><strong>{this.state.whisky.origin}</strong></li>
+         <li><strong>{this.state.whisky.taste}</strong></li>
+         <li><ReviewList whiskyId={this.props.params.whiskyId} /></li>
        </ul>
 
      </div>
