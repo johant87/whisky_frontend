@@ -20,7 +20,8 @@ class Whisky extends React.Component {
 
    jQuery.getJSON("http://vast-reaches-77135.herokuapp.com/whiskies/" + WhiskyId + ".json", function(data) {
      component.setState({
-       whisky: data.whisky
+       whisky: data.whisky,
+       average_rating: data.average_rating
      });
    });
  }
@@ -35,6 +36,7 @@ class Whisky extends React.Component {
          <li><strong>{this.state.whisky.description}</strong></li>
          <li><strong>{this.state.whisky.origin}</strong></li>
          <li><strong>{this.state.whisky.taste}</strong></li>
+         <li>Average rating: {this.state.average_rating}</li>
          <li><ReviewList whiskyId={this.props.params.whiskyId} /></li>
        </ul>
 
