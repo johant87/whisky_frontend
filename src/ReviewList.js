@@ -11,31 +11,34 @@ class ReviewList extends React.Component {
   }
 
 
-  showReviews(event) {
-    let component = this;
-    let whiskyId = this.props.whiskyId;
+  showReviews() {
+      let component = this;
+      let whiskyId = this.props.whiskyId;
 
-    jQuery.getJSON("http://vast-reaches-77135.herokuapp.com/whiskies/" + whiskyId, function(data){
-      component.setState({
-        reviews: data.reviews
+      jQuery.getJSON("http://vast-reaches-77135.herokuapp.com/whiskies/" + whiskyId + ".json", function(data) {
+        component.setState({
+          reviews: data.reviews
+        });
       });
-    });
-  }
+    }
 
-  componentDidMount() {
-    this.showReviews();
-  }
+    componentDidMount() {
+      this.showReviews();
+    }
 
   render() {
     return(
       <ul>
+        <ReviewForm whiskyId={this.props.whiskyId} onChange={this.showReviews.bind(this)} />
       <h2>Reviews:</h2>
         {this.state.reviews.map(function(review, i) {
           return(
+          <div>
             <div key={i}>
               <li>{review.name}</li>
               <li>{review.rating}</li>
               <li>{review.description}</li>
+            </div>
             </div>
           );
         })}
