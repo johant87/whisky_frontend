@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import jQuery from 'jquery';
 import WhiskyList from './WhiskyList';
+import './stylesheets/_bootstrap.scss';
 
 class App extends React.Component {
   constructor(){
