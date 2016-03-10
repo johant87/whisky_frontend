@@ -5,10 +5,11 @@ import WhiskyItem from './WhiskyItem';
 class WhiskyList extends React.Component {
   constructor() {
     super();
-
     this.state = {
       whiskies: [],
-      counter: 1
+      id: null,
+      name: '',
+      taste: ''
     };
   }
 
@@ -31,16 +32,17 @@ class WhiskyList extends React.Component {
 
   render() {
     return (
-      <ul>
-      <h2>Whiskies:</h2>
+      <div className="margin-top">
      {this.state.whiskies.map(function(whisky, i) {
        return(
-         <div>
-         <WhiskyItem key={whisky.id} id={whisky.id} name={whisky.name} />
-         </div>
+
+           <div className="col-md-4">
+              <WhiskyItem key={whisky.id} id={whisky.id} name={whisky.name} taste={whisky.taste} />
+           </div>
+
        );
      })}
-   </ul>
+   </div>
 
     );
   }

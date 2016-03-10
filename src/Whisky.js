@@ -29,17 +29,18 @@ class Whisky extends React.Component {
 
  render() {
    return(
-     <div>
-       <h2>Whisky:</h2>
-       <ul>
-         <li><strong>{this.state.whisky.name}</strong></li>
-         <li><strong>{this.state.whisky.description}</strong></li>
-         <li><strong>{this.state.whisky.origin}</strong></li>
-         <li><strong>{this.state.whisky.taste}</strong></li>
-         <li>Average rating: {this.state.average_rating}</li>
-         <li><ReviewList whiskyId={this.props.params.whiskyId} /></li>
-       </ul>
-
+     <div className="margin-top">
+      <div className="col-md-4">
+        <img className="img-responsive" src="http://www.thegreenwellystop.co.uk/whiskyshop/images/uploads/Aberlour/Dec13-Aberlour12.jpg" alt="..."></img>
+      </div>
+      <div className="col-md-8">
+          <h2><strong>{this.state.whisky.name}</strong></h2>
+          <h3><strong>{this.state.whisky.description}</strong></h3>
+          <strong>{this.state.whisky.origin}</strong>
+          <strong>{this.state.whisky.taste}</strong>
+          Average rating: {this.state.average_rating}
+        <ReviewList whiskyId={this.props.params.whiskyId} />
+      </div>
      </div>
    );
  }

@@ -6,7 +6,10 @@ class ReviewList extends React.Component {
   constructor() {
     super();
     this.state = {
-      reviews: []
+      reviews: [],
+      id: null,
+      name: '',
+      description: ''
     };
   }
 

@@ -1,0 +1,42 @@
+body {
+  background-color: #fff;
+}
+h2 {
+  font-family: 'Slabo 27px', serif;
+  color: #CBAD53;
+}
+
+p {
+  color: #eac964;
+}
+
+ul {
+  color: #eac964;
+}
+.thumbnail {
+  border-style: none;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+.margin-top {
+  margin-top: 50px;
+}
+.jumbotron {
+background-image: url('/../../images/Macallan1.jpg');
+height: 100%;
+width: 100%;
+background-size: cover;
+}
+
+.thumbnail .caption {
+  border-radius: 0;
+  background-color: #141414;
+  color: #CBAD53;
+}
+
+.thumbnail .caption a {
+  color: #CBAD53;
+  padding-left: 15px;
+  font-family: 'Slabo 27px', serif;
+}
