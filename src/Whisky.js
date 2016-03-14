@@ -36,9 +36,9 @@ class Whisky extends React.Component {
       <div className="col-md-8">
           <h2><strong>{this.state.whisky.name}</strong></h2>
           <h3><strong>{this.state.whisky.description}</strong></h3>
-          <strong>{this.state.whisky.origin}</strong>
-          <strong>{this.state.whisky.taste}</strong>
-          Average rating: {this.state.average_rating}
+          <p>{this.state.whisky.origin}</p>
+          <p>{this.state.whisky.taste}</p>
+          <p>Average rating: {this.state.average_rating}</p>
         <ReviewList whiskyId={this.props.params.whiskyId} />
       </div>
      </div>

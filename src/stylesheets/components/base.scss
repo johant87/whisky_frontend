@@ -1,24 +1,92 @@
 body {
-  background-color: #fff;
+background-color: #20110e;
 }
 h2 {
   font-family: 'Slabo 27px', serif;
-  color: #CBAD53;
+  color: #e9a434;
+}
+h3 {
+  font-family: 'Slabo 27px', serif;
+  color: #e9a434;
 }
 
 p {
-  color: #eac964;
+  color: #f8ead1;
 }
 
 ul {
   color: #eac964;
 }
+img {
+   display: inline-block;
+}
+
+a {
+  color: #e9a434;
+}
+
+a:hover {
+  color: #e9a434;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.margin-row{
+  margin-left: -15px;
+  margin-right: -15px;
+}
+hr {
+  border: 0;
+  width: 40px;
+  color: #a1672b;
+  background-color: #a1672b;
+  height: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.color-heart {
+    color: #e9a434;
+    margin: 0 5px 0 15px;
+}
+.post-content {
+    bottom: 20%;
+    left:0;
+    position: absolute;
+}
+
+.thumbnail{
+    position:relative;
+
+
+}
+
+
+.thumbnail .caption {
+  border-radius: 0;
+  color: #f8ead1;
+}
+
+.thumbnail .caption p{
+  color: #f8ead1;
+}
+.thumbnail .caption a {
+  color: #f8ead1;
+  padding-left: 15px;
+  font-family: 'Slabo 27px', serif;
+}
+
 .thumbnail {
   border-style: none;
   padding: 0;
+  background-color: transparent;
   border: 0;
   border-radius: 0;
 }
+
+
+
 .margin-top {
   margin-top: 50px;
 }
@@ -27,16 +95,4 @@ background-image: url('/../../images/Macallan1.jpg');
 height: 100%;
 width: 100%;
 background-size: cover;
-}
-
-.thumbnail .caption {
-  border-radius: 0;
-  background-color: #141414;
-  color: #CBAD53;
-}
-
-.thumbnail .caption a {
-  color: #CBAD53;
-  padding-left: 15px;
-  font-family: 'Slabo 27px', serif;
 }

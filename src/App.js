@@ -4,6 +4,7 @@ import jQuery from 'jquery';
 import WhiskyList from './WhiskyList';
 import './stylesheets/components.scss';
 
+
 class App extends React.Component {
   constructor(){
     super();
@@ -21,16 +22,11 @@ class App extends React.Component {
         <span className="icon-bar"></span>
         <span className="icon-bar"></span>
       </button>
-      <Link to="/" className="navbar-brand" href="#">Whisky Lovers</Link>
+      <Link to="/" className="navbar-brand navbar-brand-centered" href="#">Whisky Lovers</Link>
     </div>
 
     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul className="nav navbar-nav">
-        <li><Link to="/whiskies">Explore</Link></li>
-      </ul>
-      <ul className="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-      </ul>
+
     </div>
   </div>
 </nav>
@@ -45,7 +41,7 @@ class App extends React.Component {
             {this.props.children}
       </div>
       <div className="container-fluid">
-        <p className="pull-right">Coded with ♥ by <a href="johanvandentillaart.nl" target="_blank">johanvandentillaart.nl</a></p>
+        <p className="pull-right">Coded with ♥ by <a href="http://johanvandentillaart.nl" target="_blank">johanvandentillaart.nl</a></p>
       </div>
 </div>
       );
