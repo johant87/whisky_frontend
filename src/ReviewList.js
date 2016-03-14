@@ -6,7 +6,10 @@ class ReviewList extends React.Component {
   constructor() {
     super();
     this.state = {
-      reviews: []
+      reviews: [],
+      id: null,
+      name: '',
+      description: ''
     };
   }
 
@@ -28,21 +31,21 @@ class ReviewList extends React.Component {
 
   render() {
     return(
-      <ul>
+      <div className="row">
         <ReviewForm whiskyId={this.props.whiskyId} onChange={this.showReviews.bind(this)} />
       <h2>Reviews:</h2>
         {this.state.reviews.map(function(review, i) {
           return(
           <div>
             <div key={i}>
-              <li>{review.name}</li>
-              <li>{review.rating}</li>
-              <li>{review.description}</li>
+              <p>{review.name}</p>
+              <p>{review.rating}</p>
+              <p>{review.description}</p>
             </div>
-            </div>
+          </div>
           );
         })}
-      </ul>
+      </div>
     );
   }
 }

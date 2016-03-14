@@ -1,0 +1,33 @@
+.navbar-default {
+  background-color: #20110e;
+  border-radius: 0;
+  border-style: none;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #e9a434;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #e9a434;
+}
+.navbar-brand-centered {
+       position: absolute;
+       left: 50%;
+       display: block;
+       color: #e9a434;
+       font-family: 'Slabo 27px', serif;
+       width: 160px;
+       text-align: center;
+   }
+   .navbar>.container .navbar-brand-centered,
+   .navbar>.container-fluid .navbar-brand-centered {
+       margin-left: -80px;
+   }
+
+.navbar-default .navbar-brand {
+  color: #e9a434;
+}
