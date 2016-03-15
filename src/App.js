@@ -22,7 +22,7 @@ class App extends React.Component {
         <span className="icon-bar"></span>
         <span className="icon-bar"></span>
       </button>
-      <Link to="/" className="navbar-brand navbar-brand-centered" href="#">Whisky Lovers</Link>
+      <Link to="/" className="navbar-brand navbar-brand-centered" href="#">The Whisky connoisseur</Link>
     </div>
 
     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -40,7 +40,7 @@ class App extends React.Component {
       <div className="container">
             {this.props.children}
       </div>
-      <div className="container-fluid">
+      <div className="container-fluid margin-top">
         <p className="pull-right">Coded with ♥ by <a href="http://johanvandentillaart.nl" target="_blank">johanvandentillaart.nl</a></p>
       </div>
 </div>

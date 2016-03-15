@@ -10,7 +10,8 @@ class WhiskyList extends React.Component {
       whiskies: [],
       id: null,
       name: '',
-      taste: ''
+      taste: '',
+      photo: ''
     };
   }
 
@@ -39,7 +40,7 @@ class WhiskyList extends React.Component {
        return(
       <div className="col-md-4">
         <Link to={`/whiskies/${whisky.id}`} className="thumbnail">
-                  <img className="img-responsive" src="http://johanvandentillaart.nl/whisky-img/balblair.jpg" alt="..." />
+                  <img className="img-responsive" src={whisky.photo} alt="..." />
                 <div className="caption post-content text-center">
                      <h3>{whisky.name}<span className="color-heart"><i className="fa fa-heart-o"></i></span>{whisky.average_rating}</h3>
                      <hr></hr>

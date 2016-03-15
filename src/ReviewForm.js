@@ -42,7 +42,7 @@ class ReviewForm extends React.Component {
   render() {
     return(
       <div>
-        <h3>add your review:</h3>
+        <h3>Add your review:</h3>
         <form role="form" onSubmit={this.createReview.bind(this)}>
           <div className="row">
             <div className="form-group col-md-8 margin-row">

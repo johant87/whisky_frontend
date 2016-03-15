@@ -20,14 +20,67 @@
        display: block;
        color: #e9a434;
        font-family: 'Slabo 27px', serif;
-       width: 160px;
+       width: 250px;
        text-align: center;
    }
    .navbar>.container .navbar-brand-centered,
    .navbar>.container-fluid .navbar-brand-centered {
-       margin-left: -80px;
+       margin-left: -125px;
    }
 
 .navbar-default .navbar-brand {
   color: #e9a434;
 }
+.navbar-default .navbar-brand:visited {
+  color: #e9a434;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #f8ead1;
+}
+
+.btn-default {
+  border-color: #e9a434 ;
+  color: #f8ead1;
+  background-color: #20110e;
+}
+.btn-default:visited {
+  border-color: #e9a434 ;
+  color: #f8ead1;
+  background-color: #20110e;
+}
+.btn-default:focus {
+  border-color: #e9a434 ;
+  color: #f8ead1;
+  background-color: #20110e;
+}
+.btn-default:hover {
+  border-color: #e9a434 ;
+  color: #f8ead1;
+  background-color: #e9a434;
+}
+
+
+.form-control {
+  background-color: transparent;
+  border: 1px solid #e9a434;
+  color: #f8ead1;
+}
+
+.form-control:focus {
+        border-color: #f8ead1;
+        box-shadow: none;
+      }
+
+select#rating.form-control
+ {
+        border-color: #e9a434;
+        box-shadow: none;
+        background-color: #20110e;
+      }
+select#rating.form-control:focus
+ {
+        border-color: #f8ead1;
+        box-shadow: none;
+        background-color: #20110e;
+      }
