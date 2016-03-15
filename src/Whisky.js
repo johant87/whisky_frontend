@@ -31,13 +31,12 @@ class Whisky extends React.Component {
    return(
      <div className="margin-top">
       <div className="col-md-4">
-        <img className="img-responsive" src="http://www.thegreenwellystop.co.uk/whiskyshop/images/uploads/Aberlour/Dec13-Aberlour12.jpg" alt="..."></img>
+        <img className="img-responsive" src={this.state.whisky.photo} alt="..."></img>
       </div>
       <div className="col-md-8">
-          <h2><strong>{this.state.whisky.name}</strong></h2>
-          <h3><strong>{this.state.whisky.description}</strong></h3>
-          <p>{this.state.whisky.origin}</p>
-          <p>{this.state.whisky.taste}</p>
+          <h2><strong>{this.state.whisky.name}</strong> - {this.state.whisky.description}</h2>
+          <p>origin: {this.state.whisky.origin}</p>
+          <p>Taste: {this.state.whisky.taste}</p>
           <p>Average rating: {this.state.average_rating}</p>
         <ReviewList whiskyId={this.props.params.whiskyId} />
       </div>

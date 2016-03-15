@@ -7,7 +7,7 @@ h2 {
 }
 h3 {
   font-family: 'Slabo 27px', serif;
-  color: #e9a434;
+  color: #f8ead1;
 }
 
 p {
@@ -66,6 +66,8 @@ hr {
 .thumbnail .caption {
   border-radius: 0;
   color: #f8ead1;
+  min-height: 200px;
+  background-color:rgba(32,17,14,0.5);
 }
 
 .thumbnail .caption p{
@@ -84,8 +86,6 @@ hr {
   border: 0;
   border-radius: 0;
 }
-
-
 
 .margin-top {
   margin-top: 50px;

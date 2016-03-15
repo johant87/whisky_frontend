@@ -38,10 +38,11 @@ class ReviewList extends React.Component {
           return(
           <div>
             <div key={i}>
-              <p>{review.name}</p>
-              <p>{review.rating}</p>
-              <p>{review.description}</p>
+              <p>Name: {review.name}</p>
+              <p>Rating: {review.rating}</p>
+              <p>Review: {review.description}</p>
             </div>
+            <hr></hr>
           </div>
           );
         })}
